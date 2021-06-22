@@ -1,0 +1,10 @@
+//request -> entrando
+//response - > saind
+
+tipos de paramentros
+Route Parames => http://localhost:3000/produtos/5545645
+Query Parames => http://localhost:3000/produtos?name=teclado&size=10
+Body Parames => {
+    "name" : "teclado",
+    "size" : "10"
+}

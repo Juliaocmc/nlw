@@ -1,3 +1,4 @@
+import { getCustomRepository } from "typeorm"
 import { ComplimentsRepositories } from "../repositories/ComplimentsRepositories"
 
 
@@ -12,7 +13,7 @@ interface IComplimentRequest {
 class CreateComplimentRequest {
 
     async execute({ tag_id, user_sender, user_receiver, message }: IComplimentRequest) {
-        const complimentsRepositories = ComplimentsRepositories()
+        const complimentsRepositories = getCustomRepository(ComplimentsRepositories)
     }
 }
 

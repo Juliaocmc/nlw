@@ -15,7 +15,7 @@ class CreateComplimentService {
 
     async execute({ tag_id, user_sender, user_receiver, message }: IComplimentRequest) {
         const complimentsRepositories = getCustomRepository(ComplimentsRepositories);
-        const userRepositories = getCustomRepository(UserRepositories)
+        const userRepositories = getCustomRepository(UserRepositories);
 
         if (user_sender === user_receiver) {
             throw new Error("Usuario incorreto")

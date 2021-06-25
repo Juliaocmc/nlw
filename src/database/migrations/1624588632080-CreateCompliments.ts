@@ -28,7 +28,7 @@ export class CreateCompliments1624499392387 implements MigrationInterface {
 
                     },
                     {
-                        name: "massage",
+                        name: "message",
                         type: "varchar"
                     },
                     {

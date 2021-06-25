@@ -5,7 +5,7 @@ import { CreateTagService } from "../services/CreateTagService";
 
 class CreateTagController {
 
-    async handler(req: Request, res: Response) {
+    async handle(req: Request, res: Response) {
 
         const { name } = req.body
 

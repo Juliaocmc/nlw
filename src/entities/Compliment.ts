@@ -4,7 +4,7 @@ import { Tag } from "./Tag";
 import { User } from "./User";
 
 @Entity("compliments")
-class Compliments {
+class Compliment {
 
     @PrimaryColumn()
     readonly id: string
@@ -17,8 +17,7 @@ class Compliments {
     userSender: User
 
     @Column()
-
-    user_reciver: string
+    user_receiver: string
 
     @JoinColumn({ name: "user_reciver" })
     @ManyToOne(() => User)
@@ -45,4 +44,4 @@ class Compliments {
     }
 }
 
-export { Compliments }
+export { Compliment }

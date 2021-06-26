@@ -33,7 +33,7 @@ class AuthenticateUserService {
             "4b6f7cee35b5b1f1817eb64ad02c53bc",
             {
                 subject: user.id,
-                expiresIn: "15m"
+                expiresIn: "1d"
             }
         );
 
